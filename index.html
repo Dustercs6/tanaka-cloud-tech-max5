@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tanaka's Car Dealership API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>Tanaka's Car Dealership</h1>
+        <p>A simple API for Managing cars, Purchases, and Customer access.</p>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2>Overview</h2>
+            <p>
+                This API simulates a modern car dealership backend. You can:
+            </p>
+            <ul>
+                <li>Browse available cars in the dealership inventory</li>
+                <li>Add, update, or remove cars</li>
+                <li>Create purchase records for customers</li>
+                <li>Protect endpoints using basic authentication</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Authentication</h2>
+            <p>
+                The API uses HTTP Basic Authentication for protected endpoints.
+            </p>
+            <ul>
+                <li><strong>Username:</strong> <code>tanaka</code></li>
+                <li><strong>Password:</strong> <code>tanaka123</code></li>
+            </ul>
+            <p>
+                Use these credentials to log in to use the API.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>Key Endpoints</h2>
+
+            <h3>Cars</h3>
+            <ul>
+                <li><code>GET /cars</code> – List all cars in the dealership inventory</li>
+                <li><code>POST /cars</code> – Add a new car to the inventory</li>
+                <li><code>GET /cars/{car_id}</code> – Get details of a specific car</li>
+                <li><code>PUT /cars/{car_id}</code> – Update an existing car</li>
+                <li><code>DELETE /cars/{car_id}</code> – Remove a car from the inventory</li>
+            </ul>
+
+            <h3>Purchases</h3>
+            <ul>
+                <li><code>GET /purchases</code> – List all recorded purchases</li>
+                <li><code>POST /purchases</code> – Create a new purchase</li>
+                <li><code>GET /purchases/{purchase_id}</code> – Get details of a specific purchase</li>
+            </ul>
+
+            <h3>Authentication</h3>
+            <ul>
+                <li><code>GET /login-required</code> – Test endpoint that requires login</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Github Repo</h2>
+            <p>
+                Click button to open Githiub Repo
+            </p>
+            <p>
+                <a class="btn" href="https://github.com/Dustercs6/tanaka-cloud-tech-max5" target="_blank">
+                    Githiub
+                </a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Tanaka's Car Dealership Cloud Tech Project</p>
+    </footer>
+</body>
+</html>
